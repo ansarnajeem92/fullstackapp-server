@@ -15,7 +15,7 @@ const pool = new Pool({
 
 app.get("/api", async (req, res) => {
   const result = await pool.query("SELECT NOW()");
-  res.json({ message: "Hello from Express!", time: result.rows[0].now });
+  res.json({ message: "Hello Ansar Najeem", time: result.rows[0].now });
 });
 
 const PORT = process.env.PORT || 5000;
