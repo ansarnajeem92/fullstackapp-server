@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /app
+            cd /root/app
             git -C fullstackapp-client fetch origin master
             git -C fullstackapp-client reset --hard origin/master
             git -C fullstackapp-server fetch origin master
